@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo "Build stage is running"
-        // e.g. sh 'docker build -t 25rp18439_app .'
+        // e.g. sh 'docker build -t 25rp19025_app .'
       }
     }
     stage('Deploy') {
