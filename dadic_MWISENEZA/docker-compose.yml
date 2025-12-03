@@ -1,0 +1,40 @@
+version: '3.8'
+services:
+  25rp19025_app:
+    build: .
+    container_name: 25rp19025_app
+    ports:
+      - "8080:80"
+    environment:
+      DB_HOST: 25rp19025_db
+      DB_USER: root
+      DB_PASSWORD: rootpassword
+      DB_NAME: 25rp19025_shareride_db
+      DB_PORT: 3306
+    depends_on:
+      - 25rp19025_db
+
+  25rp19025_db:
+    image: mysql:8.0
+    container_name: 25rp19025_db
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+    ports:
+      - "3307:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql:ro
+
+  25rp19025_phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: 25rp19025_phpmyadmin
+    environment:
+      PMA_HOST: 25rp19025_db
+      MYSQL_ROOT_PASSWORD: rootpassword
+    ports:
+      - "8081:80"
+    depends_on:
+      - 25rp19025_db
+
+volumes:
+  db_data:
