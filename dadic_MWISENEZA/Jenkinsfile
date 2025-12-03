@@ -1,0 +1,17 @@
+pipeline {
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        echo "Build stage is running"
+        // e.g. sh 'docker build -t 25rp18439_app .'
+      }
+    }
+    stage('Deploy') {
+      steps {
+        echo "Deploy stage is running"
+        // e.g. sh 'docker-compose up -d --build'
+      }
+    }
+  }
+}
