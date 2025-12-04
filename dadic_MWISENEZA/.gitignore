@@ -1,0 +1,69 @@
+# ----------------------------------------------------
+# OS / Editor Files
+# ----------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ----------------------------------------------------
+# Composer
+# ----------------------------------------------------
+/vendor/
+/composer.lock
+
+# If you want to track composer.lock, remove the above line.
+
+# ----------------------------------------------------
+# PHPStorm / NetBeans / Other IDE
+# ----------------------------------------------------
+nbproject/
+*.iml
+
+# ----------------------------------------------------
+# Logs / Cache / Temp
+# ----------------------------------------------------
+/logs/
+/cache/
+/tmp/
+*.log
+*.cache
+
+# Symfony / Laravel / Other frameworks cache
+/storage/logs/
+/storage/framework/cache/
+/storage/framework/sessions/
+/storage/framework/views/
+
+# ----------------------------------------------------
+# Environment / Secrets
+# ----------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# ----------------------------------------------------
+# PHPUnit / Testing
+# ----------------------------------------------------
+/phpunit.xml
+/phpunit.xml.dist
+/.phpunit.result.cache
+/.coverage/
+
+# ----------------------------------------------------
+# Node / Frontend
+# ----------------------------------------------------
+/node_modules/
+/npm-debug.log
+/yarn-error.log
+/dist/
+/build/
+
+# ----------------------------------------------------
+# Misc
+# ----------------------------------------------------
+/coverage/
+/public/uploads/*
+!/public/uploads/.gitkeep

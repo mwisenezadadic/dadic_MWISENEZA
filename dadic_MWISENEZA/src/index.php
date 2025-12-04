@@ -5,10 +5,10 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>HEALTHRWANDA – Hospital Management Portal</title>
+    <title>NEW VISION LTD</title>
 </head>
 <body>
-    <h1>Welcome to HEALTHRWANDA System</h1>
+    <h1>Welcome to NEW VISION LTD System</h1>
 
     <p>Please choose an option:</p>
     <ul>
